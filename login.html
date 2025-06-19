@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        <body>
+            <center>
+                <table>
+                    <tr>
+                        <td bgcolor="darkblue" style="color: white; font-size: 24px;">
+                            <h2>Login Form</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form action="login.php" method="post">
+                                Username: <input type="text" name="username" required><br><br>
+                                Password: <input type="password" name="password" pattern="(?=.*[A-Z])(?=.*a-z)(?=.*\d)(?=.*[!@#$%^&*]).{8,}"><br><br>
+                                <input type="submit" value="Login">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="window.location.href='f1.html'">Register</button>
+                        </td>
+                </table>
+            </center>
