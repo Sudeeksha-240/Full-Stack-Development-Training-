@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Watch - ConnectTube</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .page-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .main-content {
+      flex: 3;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .video-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0 10px;
+    }
+
+    .channel-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .subscribe-btn {
+      padding: 8px 16px;
+      background: #cc0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .like-comment {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .like-btn {
+      padding: 6px 12px;
+      background: #eee;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    .sidebar {
+      flex: 1.2;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+
+    .recommended h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .recommend-card {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: #000;
+      align-items: center;
+    }
+
+    .recommend-card img {
+      width: 100px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .recommend-card div {
+      font-size: 14px;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      color: #3366cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <!-- Main Video Section -->
+    <div class="main-content">
+      <iframe src="https://www.youtube.com/embed/HcOc7P5BMi4" allowfullscreen></iframe>
+
+      <div class="video-title">HTML Tutorial for Beginners</div>
+
+      <div class="channel-info">
+        <div class="channel-name">Channel: Apna College</div>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+
+      <div class="like-comment">
+        <button class="like-btn">👍 Like</button>
+        <textarea placeholder="Add a comment..."></textarea>
+      </div>
+    </div>
+
+    <!-- Sidebar with Recommended Videos -->
+    <div class="sidebar">
+      <div class="recommended">
+        <h3>Recommended Videos</h3>
+
+        <a href="https://www.youtube.com/watch?v=4WjtQjPQGIs" class="recommend-card">
+          <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/258536138/original/0aa067519dec7a7cc07767ca85caa7d39a61f55a/design-unique-and-eye-catching-youtube-thumbnail.png" alt="Video 2">
+          <div>Web Developer Intro</div>
+        </a>
+
+        <a href="video3.html" class="recommend-card">
+          <img src="https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg" alt="Video 3">
+          <div>Sample Video 3</div>
+        </a>
+
+        <a href="video1.html" class="recommend-card">
+          <img src="https://img.youtube.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Video 1">
+          <div>Sample Video 1</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <a class="back-link" href="p1.html">← Back to Home</a>
+</body>
+</html>
