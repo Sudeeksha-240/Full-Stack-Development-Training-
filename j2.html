@@ -1,0 +1,22 @@
+<center>
+    <script>
+        function x(){
+            b=true;xx
+            var a;
+            a=frm.nm.value;
+            if(a==""){
+                b=false;
+                alert("I think you have a name!!");
+                frm.nm.focus();
+            }
+            if (b==true){
+                frm.action="f1.html";
+                frm.submit();
+            }
+        }
+    </script>
+    <form name= frm action="">
+        Name: <input type=text name=nm>
+        <p> <input type=button value='Register' onclick=x()></p>
+    </form>
+</center>

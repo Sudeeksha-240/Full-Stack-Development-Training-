@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+<center>
+    <table>
+        <tr>
+            <td bgcolor="darkblue" style="color: white; font-size: 24px;">
+                <h2>Registration Form</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="register.php" method="post">
+    First Name: <input type="text" name="firstname" required><br><br>
+    Last Name: <input type="text" name="lastname" required><br><br>
+    Email: <input type="email" name="email" required><br><br>
+    Password: <input type="password" name="password" required><br><br>
+    Date of Birth: <input type="date" name="dob"><br><br>
+    
+    Gender:
+    <label>
+        <input type="radio" name="gender" value="male" required> Male
+    </label>
+    <label>
+        <input type="radio" name="gender" value="female"> Female
+    </label>
+    <label>
+        <input type="radio" name="gender" value="other"> Other
+    </label>
+    <br><br>
+    
+    Semester:
+    <select name="semester" required>
+        <option value="">Select Semester</option>
+        <option value="1">Sem 1</option>
+        <option value="2">Sem 2</option>
+        <option value="3">Sem 3</option>
+        <option value="4">Sem 4</option>
+        <option value="5">Sem 5</option>
+        <option value="6">Sem 6</option>
+        <option value="7">Sem 7</option>
+        <option value="8">Sem 8</option>
+    </select>
+    <br><br>
+    
+    Hobbies:<br>
+    <label><input type="checkbox" name="hobbies[]" value="reading"> Reading</label>
+    <label><input type="checkbox" name="hobbies[]" value="sports"> Sports</label>
+    <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>
+    <label><input type="checkbox" name="hobbies[]" value="other"> Other</label>
+    <br><br>
+    
+    <input type="checkbox" name="terms" required> I agree to the terms and conditions<br><br>
+    <input type="submit" value="Register"><br><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="window.location.href='login.html'">Login</button>
+            </td>
+        </tr>
+    </table>
+    </center>
