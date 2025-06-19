@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ConnectIn - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .main-layout {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .profile-card {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .feed-card-container {
+      flex: 2;
+      min-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <img src="../img/logo_files/9c1d9260-8982-4f6b-938c-212372e2dac5.png" alt="ConnectIn Logo" class="logo-img" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="connections.html">Connections</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="messages.html">Messages</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container main-layout">
+
+    <!-- Profile Section -->
+    <div class="card profile-card" style="text-align: center;">
+      <img src="../img/dp.jpg" class="profile-pic" alt="Profile" />
+      <h2>Mamidi Sudeeksha</h2>
+      <p>Student | Web Developer</p>
+      <p>Hyderabad, India</p>
+      <p>Email: sudeekshamamidi@gmail.com</p>
+    </div>
+
+    <!-- Feed Section -->
+    <div class="card feed-card-container">
+      <h1>Welcome, Mamidi Sudeeksha</h1>
+      <div class="feed-card"><strong>Pragathi Mandal</strong> got hired at ServiceNow! 🎉</div>
+      <div class="feed-card"><strong>React 19</strong> has been released! 🚀</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
