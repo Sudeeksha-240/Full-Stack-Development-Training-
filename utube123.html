@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        /* === Container for centered layout === */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* === HEADER === */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #logo {
+            height: 65px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            flex: 0.8;
+            margin: 0 16px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+
+        #mic {
+            margin-left: 15px;
+            height: 28px;
+            width: 28px;
+            cursor: pointer;
+        }
+        #account {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        margin-left: 16px;
+        cursor: pointer;
+}
+
+
+        /* === NAVIGATION === */
+        nav {
+            padding: 10px ;
+            /* background-color: #f9f9f9; */
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav-buttons {
+            /* white-space: nowrap; */
+            overflow-x: auto;
+        }
+
+        nav button {
+            margin: 4px 6px 4px 0;
+            padding: 6px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 16px;
+            background-color: #e4e4e4;
+            cursor: pointer;
+        }
+
+        /* === VIDEO GRID === */
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+            padding: 20px 0;
+        }
+
+        .video-card {
+            width: 320px;
+            cursor: pointer;
+        }
+
+        .video-card img.thumbnail {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .video-info {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 8px;
+        }
+
+        .channel-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .video-title {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+        .video-card a {
+    display: block;         /* Make the anchor behave like a block */
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit text color (usually for links) */
+}
+
+.video-card a:hover {
+    opacity: 0.9;           /* Optional hover effect */
+}
+
+</style>
+<body>
+
+<!-- Container wraps everything to keep alignment -->
+<div class="container">
+
+    <header>
+        <img src="./img/utubelogo.webp" alt="YouTube Logo" id="logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <img src="./img/mic.jpeg" alt="Mic" id="mic">
+        <img src="./img/2.png" alt="Account" id="account">
+    </header>
+
+    <nav>
+        <div class="nav-buttons">
+            <button>All</button>
+            <button>Music</button>
+            <button>Gaming</button>
+            <button>Trailers</button>
+            <button>Live</button>
+            <button>Sports</button>
+            <button>News</button>
+        </div>
+    </nav>
+
+    <main class="video-grid">
+        <div class="video-card">
+            <a href="video1.mp4">
+            <img src="img1.jpeg" alt="Video Thumbnail" class="thumbnail">
+            </a>
+            <div class="video-info">
+                <img src="logo1.jpeg" class="channel-logo" alt="Channel">
+                <div class="video-title">Allu Arjun X Atlee teaser update comming soon</div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="https://youtu.be/zdrFsUD30Kw">
+            <img src="img2.jpeg" alt="Video Thumbnail" class="thumbnail">
+            </a>
+            <div class="video-info">
+                <img src="logo2.jpeg" class="channel-logo" alt="Channel">
+                <div class="video-title">Filght Crash at Ahmedabad over 240+ died in crash </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="https://youtu.be/_0OabEjNkt0?list=RD_0OabEjNkt0">
+            <img src="img3.jpeg" alt="Video Thumbnail" class="thumbnail">
+            </a>
+            <div class="video-info">
+                <img src="logo3.png" class="channel-logo" alt="Channel">
+                <div class="video-title">HIT-3 Thanu  full video song </div>
+            </div>
+        </div>
+        <div class="video-card">
+            <a href="https://youtu.be/bDTUFufX-1s">
+            <img src="img4.jpeg" alt="Video Thumbnail" class="thumbnail">
+            </a>
+            <div class="video-info">
+                <img src="logo5.jpeg" class="channel-logo" alt="Channel">
+                <div class="video-title">K.G.F Trailer released</div>
+            </div>
+        </div>
+        <div class="video-card">
+            <a href="/Video1.mp4">
+            <img src="img6.jpeg" alt="Video Thumbnail" class="thumbnail">
+            </a>
+            <div class="video-info">
+                <img src="logo4.png" class="channel-logo" alt="Channel">
+                <div class="video-title">Range Rover new model launched in india & Price 1.2 cr</div>
+            </div>
+        </div>
+        <div class="video-card">
+            <a href="Cricket video.mp4">
+            <img src="img5.webp" alt="Video Thumbnail" class="thumbnail">
+            </a>
+            <div class="video-info">
+                <img src="logo6.jpeg" class="channel-logo" alt="Channel">
+                <div class="video-title">Ind Vs Pak, No matches b/w both the countries till furter instructions from ICC</div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

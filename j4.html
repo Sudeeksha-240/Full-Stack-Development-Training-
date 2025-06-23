@@ -1,0 +1,49 @@
+<script>
+function add1()
+{
+    a1=frm.n1.value;
+    a2=frm.n2.value;
+    if(isNaN(a1) || isNaN(a2))
+{
+    document.getElementById("answer").innerHTML="Number only please";
+}
+else
+{
+    n1=parseInt(frm.n1.value);
+    n2=parseInt(frm.n2.value);
+    ans=n1+n2;
+}
+document.getElementById("answer").innerHTML="The answer is : " + ans;
+}
+function multiply()
+{
+    n1=frm.n1.value;
+    n2=frm.n2.value;
+    ans=n1*n2;
+    document.getElementById("answer").innerHTML="The answer is : "+ ans;
+}
+function divide(){
+    n1=frm.n1.value;
+    n2=frm.n2.value;
+    ans=n1/n2;
+    document.getElementById("answer").innerHTML="The answer is : "+ ans;
+}
+function sub(){
+    n1=frm.n1.value;
+    n2=frm.n2.value;
+    ans=n1-n2;
+    document.getElementById("answer").innerHTML="The answer is : "+ ans;
+}
+</script>
+<center>
+    <form name=frm>
+        Enter a no : <input type="text" name="n1">
+        <p>
+            Enter another no : <input type="text" name="n2">
+            <p>
+                <input type="button" value="+" onclick="add1()">
+                <input type="button" value="-" onclick="sub()">
+                <input type="button" value="*" onclick="multiply()">
+                <input type="button" value="/" onclick="divide()">
+                <p>
+                    <span id=answer>The answer will appear here</span>
